@@ -1,0 +1,26 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "clean",
+            "type": "shell",
+            "command": "C:/Users/bilal/Downloads/winlibs-x86_64-posix-seh-gcc-13.1.0-llvm-16.0.5-mingw-w64ucrt-11.0.0-r5/mingw64/bin/g++.exe",  // Path to MinGW g++ compiler
+            "args": [
+                "-std=c++17",  // C++ standard
+                "-g",  // Enable debugging symbols
+                "${workspaceFolder}/main.cpp",  // Path to main source file
+                "${workspaceFolder}/Board.cpp",  // Include Board.cpp
+                "${workspaceFolder}/Piece.cpp",  // Include Piece.cpp
+                "${workspaceFolder}/Bot.cpp",   // Include Bot.cpp
+                "-I", "C:/Users/bilal/Downloads/SFML-2.6.2-windows-gcc-13.1.0-mingw-64-bit/SFML-2.6.2/include",  // SFML include path
+                "-L", "C:/Users/bilal/Downloads/SFML-2.6.2-windows-gcc-13.1.0-mingw-64-bit/SFML-2.6.2/lib",  // SFML lib path
+                "-lsfml-graphics", "-lsfml-window", "-lsfml-system",  // Link SFML libraries
+                "-o", "C:/Users/bilal/Chess Game/build/ChessGame.exe"  // Output executable
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true  // Set this as the default build task
+            }
+        }
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "files.associations": {
+        "*.cpp": "cpp",
+        "*.hpp": "cpp",
+        "*.h": "cpp"
+    },
+    "C_Cpp.default.includePath": [
+        "${workspaceFolder}/**",  // Include all folders in the project
+        "C:/Users/bilal/Downloads/SFML-2.6.2-windows-gcc-13.1.0-mingw-64-bit/SFML-2.6.2/include",  // SFML include path
+        "C:/Users/bilal/Downloads/winlibs-x86_64-posix-seh-gcc-13.1.0-llvm-16.0.5-mingw-w64ucrt-11.0.0-r5/mingw64/include"  // MinGW include path
+    ],
+    "C_Cpp.default.compilerPath": "C:/Users/bilal/Downloads/winlibs-x86_64-posix-seh-gcc-13.1.0-llvm-16.0.5-mingw-w64ucrt-11.0.0-r5/mingw64/bin/g++.exe",  // Path to MinGW compiler (g++)
+    "C_Cpp.default.intelliSenseMode": "gcc-x64",  // IntelliSense for GCC
+    "C_Cpp.default.cppStandard": "c++17",  // C++ standard version
+    "C_Cpp.default.cStandard": "c11",  // C standard version
+    "C_Cpp.intelliSenseEngine": "default",  // IntelliSense engine
+    "files.exclude": {
+        "**/.git": true,
+        "**/.vscode": true,
+        "**/.DS_Store": true
+    }
+}

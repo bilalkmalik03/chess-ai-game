@@ -46,25 +46,40 @@ A fully interactive, feature-complete Chess game built with **C++17** and **SFML
 
 #### ✔️ Option 2: Manual Compilation
 
+Make sure SFML is installed. Then compile using the following command:
+
 ```bash
 g++ -std=c++17 -g main.cpp Board.cpp Piece.cpp Bot.cpp ^
 -I"C:/Path/To/SFML/include" -L"C:/Path/To/SFML/lib" ^
 -lsfml-graphics -lsfml-window -lsfml-system -o build/ChessGame.exe
+```
 
-** Running the Game **
+> ⚠️ Replace `"C:/Path/To/SFML"` with your actual SFML install path.
+
+---
+
+## ▶️ Running the Game
+
+```bash
 cd build
 ChessGame.exe
+```
 
+---
 
-** Gameplay Instructions **
-- Startup Menu: Select your side (White or Black) and difficulty level (Easy, Medium, Hard).
-- Move Pieces: Click to select a piece and then click a highlighted square to move it.
-- AI: The bot automatically plays its move when it’s its turn.
-- Promotion: A popup appears to let you choose a new piece when a pawn reaches the back rank.
-- Move Log: Displayed on the right side using chess notation (e.g., e2->e4).
+## 🎮 Gameplay Instructions
 
-** Ai Logic **
-The bot uses a depth-limited Minimax algorithm with Alpha-Beta Pruning:
+- **Startup Menu**: Choose your side (White or Black) and difficulty level (Easy, Medium, Hard).
+- **Move Pieces**: Click to select a piece, then click a highlighted square to move.
+- **AI Turn**: The bot plays automatically after your move.
+- **Pawn Promotion**: A popup lets you choose a piece when promoting a pawn.
+- **Move Log**: Shown on the right in standard notation (e.g., `e2→e4`).
+
+---
+
+## 🤖 AI Logic
+
+The bot uses a **depth-limited Minimax algorithm** with **Alpha-Beta Pruning** for optimal performance.
 
 | Difficulty | Minimax Depth |
 |------------|----------------|
@@ -72,42 +87,55 @@ The bot uses a depth-limited Minimax algorithm with Alpha-Beta Pruning:
 | Medium     | 2              |
 | Hard       | 3              |
 
-Currently the evaluation is based on material value.
-You can extend it with positional heuristics like piece-square tables, king safety, and mobility.
+Currently, the evaluation function is based on material value only.
 
-** Project Structure
+> 🧠 Future improvements can include:
+> - Piece-square tables  
+> - King safety  
+> - Pawn structure and mobility heuristics
 
+---
+
+## 📁 Project Structure
+
+```
 ChessGame/
-├── assets/               # Piece textures and fonts
-├── Board.hpp / .cpp      # Board logic and move execution
-├── Piece.hpp / .cpp      # Piece classes and move generation
-├── Bot.hpp / .cpp        # Minimax AI logic and evaluation
-├── main.cpp              # Game loop and GUI
-├── tasks.json            # VS Code build task
-├── build/                # Compiled executable output
+├── assets/               # Textures and fonts
+├── Board.hpp / .cpp      # Game board logic and move validation
+├── Piece.hpp / .cpp      # Piece definitions and legal move generation
+├── Bot.hpp / .cpp        # Minimax AI with Alpha-Beta pruning
+├── main.cpp              # GUI rendering and game loop
+├── tasks.json            # VS Code build task configuration
+├── build/                # Output executable folder
 └── README.md             # Project documentation
+```
 
+---
 
-** Future Improvements **
-- [ ] Add full undo/redo functionality  
-- [ ] Save/load games to file  
-- [ ] Smarter AI evaluation (position, king safety, pawn structure)  
+## 🚧 Future Improvements
+
+- [ ] Undo/Redo functionality  
+- [ ] Save/Load game state  
+- [ ] Smarter AI evaluation (position, king safety, structure)  
 - [ ] Animated piece movement  
-- [ ] Sound effects for moves/captures  
-- [ ] LAN or local multiplayer  
-- [ ] Export to PGN format  
+- [ ] Sound effects for moves and captures  
+- [ ] LAN / Local multiplayer  
+- [ ] PGN export support  
 
+---
 
-** License **
-This project is open-source and free to use for educational or personal projects.
-You may modify and redistribute it with attribution.
+## 📜 License
 
+This project is open-source and free to use for **educational** or **personal** purposes.  
+You are welcome to modify and redistribute it with proper attribution.
 
-** Acknowledgements **
-- SFML Library: https://www.sfml-dev.org/
-- Open-source chess textures
-- Stack Overflow & open-source communities for algorithm references
+---
 
+## 🙏 Acknowledgements
+
+- [SFML Library](https://www.sfml-dev.org/) — Simple and Fast Multimedia Library  
+- Open-source chess textures  
+- Stack Overflow and open-source communities for algorithmic references
 
 
 

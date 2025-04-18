@@ -26,7 +26,7 @@ string toNotation(int row, int col) {
     return string(1, file) + string(1, rank);
 }
 
-//------------------------------------------------------------------------------
+
 // Promotion Popup Function
 // Displays a modal overlay prompting the user to select a promotion piece.
 void handlePromotion(RenderWindow &window, Board &board, const Font &font, int promoRow, int promoCol, bool promoWhite) {

@@ -24,7 +24,7 @@ int Bot::evaluate(Board& board) {
             switch (toupper(piece->getSymbol())) {
                 case 'P': pieceValue = 100; break;
                 case 'N': 
-                case 'B': pieceValue = 320; break;
+                case 'B': pieceValue = 300; break;
                 case 'R': pieceValue = 500; break;
                 case 'Q': pieceValue = 900; break;
                 case 'K': pieceValue = 20000; break;
@@ -120,7 +120,7 @@ void Bot::makeMove(Board& board, int depth, bool isWhiteBot) {
     if (moves.empty())
         return;
 
-    // Optional: Shuffle moves to add variety when moves evaluate equally.
+    // Shuffle moves to add variety when moves evaluate equally.
     random_device rd;
     mt19937 g(rd());
     shuffle(moves.begin(), moves.end(), g);

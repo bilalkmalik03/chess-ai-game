@@ -2,7 +2,8 @@
     "files.associations": {
         "*.cpp": "cpp",
         "*.hpp": "cpp",
-        "*.h": "cpp"
+        "*.h": "cpp",
+        "tuple": "cpp"
     },
     "C_Cpp.default.includePath": [
         "${workspaceFolder}/**",  // Include all folders in the project

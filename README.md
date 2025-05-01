@@ -1,20 +1,20 @@
-# 🧠 C++ Chess Game with AI (SFML)
+#  C++ Chess Game with AI (SFML)
 
 A fully interactive, feature-complete Chess game built with **C++17** and **SFML**. Includes full rules of chess, a graphical UI, move logging, pawn promotion, and an AI opponent powered by **Minimax with Alpha-Beta Pruning**. Difficulty levels determine how far ahead the bot thinks.
 
 ---
 
-## 🧩 Features
+##  Features
 
-- 🎮 **Graphical Interface** — Built with SFML 2.6; supports all standard chess rules and interactions.
-- ♟️ **Legal Move Generation** — Handles castling, en passant, promotion, check, checkmate, and stalemate.
-- 🧠 **AI Opponent** — Uses Minimax + Alpha-Beta Pruning; depth increases with selected difficulty.
-- ↔️ **Move Log** — Real-time move list on the right-hand panel using chess notation (e.g., `e2->e4`).
-- 👑 **Promotion Popup** — When a pawn reaches the 8th rank, select a piece via an in-game modal.
+-  **Graphical Interface** — Built with SFML 2.6; supports all standard chess rules and interactions.
+-  **Legal Move Generation** — Handles castling, en passant, promotion, check, checkmate, and stalemate.
+-  **AI Opponent** — Uses Minimax + Alpha-Beta Pruning; depth increases with selected difficulty.
+-  **Move Log** — Real-time move list on the right-hand panel using chess notation (e.g., `e2->e4`).
+-  **Promotion Popup** — When a pawn reaches the 8th rank, select a piece via an in-game modal.
 
 ---
 
-## 🖥️ Tech Stack
+##  Tech Stack
 
 - **Language:** C++17  
 - **Graphics Library:** SFML (Simple and Fast Multimedia Library)  
@@ -22,21 +22,21 @@ A fully interactive, feature-complete Chess game built with **C++17** and **SFML
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
-### ✅ Prerequisites
+###  Prerequisites
 
 - A C++17-compatible compiler (e.g., g++ 11+, MinGW, MSVC)
 - [SFML 2.6.2 or newer](https://www.sfml-dev.org/download.php)
 - Visual Studio Code (recommended)
 
-> 💡 Ensure SFML `.dll` files are in the same directory as your executable or accessible via your system PATH.
+>  Ensure SFML `.dll` files are in the same directory as your executable or accessible via your system PATH.
 
 ---
 
-### ⚙️ Building the Project
+###  Building the Project
 
-#### ✔️ Option 1: Using VS Code Tasks
+####  Option 1: Using VS Code Tasks
 
 1. Open the folder in VS Code.
 2. Press `Ctrl + Shift + B` to run the default build task.
@@ -44,7 +44,7 @@ A fully interactive, feature-complete Chess game built with **C++17** and **SFML
 
 > Make sure your `tasks.json` file includes correct compiler and SFML paths.
 
-#### ✔️ Option 2: Manual Compilation
+####  Option 2: Manual Compilation
 
 Make sure SFML is installed. Then compile using the following command:
 
@@ -54,11 +54,11 @@ g++ -std=c++17 -g main.cpp Board.cpp Piece.cpp Bot.cpp ^
 -lsfml-graphics -lsfml-window -lsfml-system -o build/ChessGame.exe
 ```
 
-> ⚠️ Replace `"C:/Path/To/SFML"` with your actual SFML install path.
+>  Replace `"C:/Path/To/SFML"` with your actual SFML install path.
 
 ---
 
-## ▶️ Running the Game
+##  Running the Game
 
 ```bash
 cd build
@@ -67,7 +67,7 @@ ChessGame.exe
 
 ---
 
-## 🎮 Gameplay Instructions
+##  Gameplay Instructions
 
 - **Startup Menu**: Choose your side (White or Black) and difficulty level (Easy, Medium, Hard).
 - **Move Pieces**: Click to select a piece, then click a highlighted square to move.
@@ -77,7 +77,7 @@ ChessGame.exe
 
 ---
 
-## 🤖 AI Logic
+##  AI Logic
 
 The bot uses a **depth-limited Minimax algorithm** with **Alpha-Beta Pruning** for optimal performance.
 
@@ -89,14 +89,14 @@ The bot uses a **depth-limited Minimax algorithm** with **Alpha-Beta Pruning** f
 
 Currently, the evaluation function is based on material value only.
 
-> 🧠 Future improvements can include:
+>  Future improvements can include:
 > - Piece-square tables  
 > - King safety  
 > - Pawn structure and mobility heuristics
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 ChessGame/
@@ -112,7 +112,7 @@ ChessGame/
 
 ---
 
-## 🚧 Future Improvements
+##  Future Improvements
 
 - [ ] Undo/Redo functionality  
 - [ ] Save/Load game state  
@@ -124,14 +124,14 @@ ChessGame/
 
 ---
 
-## 📜 License
+##  License
 
 This project is open-source and free to use for **educational** or **personal** purposes.  
 You are welcome to modify and redistribute it with proper attribution.
 
 ---
 
-## 🙏 Acknowledgements
+##  Acknowledgements
 
 - [SFML Library](https://www.sfml-dev.org/) — Simple and Fast Multimedia Library  
 - Open-source chess textures  

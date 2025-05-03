@@ -15,10 +15,7 @@ A fully interactive, feature-complete Chess game built with **C++17** and **SFML
 ---
 ## 📽️ Demo Video
 
-Click to download or play the demo video locally:
-
-[▶️ Download and Watch the Demo Video]("C:\Users\bilal\Videos\Screen Recordings\Screen Recording 2025-05-03 025146.mp4")
----
+Click to play the demo video: https://youtu.be/fGkHcV6ynM8 
 
 ##  Getting Started
 

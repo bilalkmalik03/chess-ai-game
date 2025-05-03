@@ -13,13 +13,11 @@ A fully interactive, feature-complete Chess game built with **C++17** and **SFML
 -  **Promotion Popup** — When a pawn reaches the 8th rank, select a piece via an in-game modal.
 
 ---
+## 📽️ Demo Video
 
-##  Tech Stack
+Click to download or play the demo video locally:
 
-- **Language:** C++17  
-- **Graphics Library:** SFML (Simple and Fast Multimedia Library)  
-- **Build System:** Visual Studio Code `tasks.json` or manual `g++` build
-
+[▶️ Download and Watch the Demo Video]("C:\Users\bilal\Videos\Screen Recordings\Screen Recording 2025-05-03 025146.mp4")
 ---
 
 ##  Getting Started
